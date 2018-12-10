@@ -63,8 +63,8 @@ namespace DatingApp.API.Data
         {
             using (var hash = new System.Security.Cryptography.HMACSHA512())
             {   
-                passwordHash = hash.Key;
-                passwordSalt = hash.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                passwordSalt = hash.Key;
+                passwordHash = hash.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
 
             }
         }
